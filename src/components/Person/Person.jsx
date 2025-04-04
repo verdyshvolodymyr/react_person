@@ -1,7 +1,10 @@
-export const Person = ({ name, sex, age, isMarried, partnerName}) => {
-  let male = 'husband';
+export const Person = ({ person }) => {
+  const { name, sex, age, isMarried, partnerName } = person;
+  let male = '';
 
   if (sex === 'm') {
+    male = 'husband';
+  } else {
     male = 'wife';
   }
 
